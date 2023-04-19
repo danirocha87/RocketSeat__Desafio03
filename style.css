@@ -1,0 +1,173 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --bg-color: hsla(84, 64%, 53%, 1);
+
+  --delay-animation1: 600ms;
+  --delay-animation2: 1200ms;
+  --delay-animation3: 2400ms;
+  --delay-animation4: 3600ms;
+  --delay-animation5: 4800ms;
+  --delay-animation6: 6000ms;
+  --delay-animation7: 7200ms;
+  --delay-animation8: 8400ms;
+  --duracao-animation: 600ms
+}
+
+body {
+  background: #404040;
+}
+
+#container {
+  padding: auto;
+  margin: auto;
+}
+
+/*aqui uso para add as imagens */
+#container #garden {
+  background: url('assets/fundo.svg');
+  position: relative;
+  width: 1440px;
+  height: 1020px;
+
+  margin: 0 auto;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 54px;
+}
+
+#wrapper-mole {
+  position: relative;
+  z-index: 0;
+}
+
+#wrapper-mole:nth-child(1) #mole-1 {
+  width: 222px;
+  height: 172px;
+
+  background-image: url(assets/toupeira6.svg);
+  background-repeat: no-repeat;
+}
+
+#wrapper-mole:nth-child(1) #mole-2 {
+  width: 222px;
+  height: 172px;
+
+  background-image: url(assets/toupeira6.svg);
+  background-repeat: no-repeat;
+}
+
+#wrapper-mole:nth-child(1) #mole-3 {
+  width: 222px;
+  height: 172px;
+
+  background-image: url(assets/toupeira6.svg);
+}
+
+#wrapper-mole:nth-child(2) #mole-1 {
+  width: 222px;
+  height: 172px;
+
+  background-image: url(assets/toupeira6.svg)
+}
+
+#wrapper-mole:nth-child(2) #mole-2 {
+  width: 222px;
+  height: 172px;
+
+  background-image: url(assets/toupeira6.svg);
+  animation: moleAppears var(--duracao-animation) var(--delay-animation2) forwards;
+}
+
+#wrapper-mole:nth-child(2) #mole-3 {
+  width: 222px;
+  height: 172px;
+
+  background-image: url(assets/toupeira6.svg);
+}
+
+#wrapper-mole:nth-child(3) #mole-1 {
+  width: 222px;
+  height: 172px;
+
+  background-image: url(assets/toupeira6.svg);
+}
+
+#wrapper-mole:nth-child(3) #mole-2 {
+  width: 222px;
+  height: 172px;
+
+  background-image: url(assets/toupeira6.svg);
+}
+
+#wrapper-mole:nth-child(3) #mole-3 {
+  width: 222px;
+  height: 172px;
+
+  background-image: url(assets/toupeira6.svg);
+  animation: moleAppears var(--duracao-animation) var(--delay-animation4) forwards;
+
+}
+
+#wrapper-mole:nth-child(4) #mole-1 {
+  width: 222px;
+  height: 172px;
+
+  background-image: url(assets/toupeira6.svg);
+  animation: moleAppears var(--duracao-animation) var(--delay-animation6) forwards;
+
+}
+
+#wrapper-mole:nth-child(4) #mole-2 {
+  width: 222px;
+  height: 172px;
+
+  background-image: url(assets/toupeira6.svg);
+}
+
+#wrapper-mole:nth-child(4) #mole-3 {
+  width: 222px;
+  height: 172px;
+
+  background-image: url(assets/toupeira6.svg);
+  background-repeat: no-repeat;
+}
+
+
+@keyframes moleAppears {
+  0% {
+    background-image: url(assets/toupeira1.svg);
+    background-repeat: no-repeat;
+  }
+
+  20% {
+    background-image: url(assets/toupeira2.svg);
+    background-repeat: no-repeat;
+  }
+
+  40% {
+    background-image: url(assets/toupeira3.svg);
+    background-repeat: no-repeat;
+  }
+
+  60% {
+    background-image: url(assets/toupeira4.svg);
+    background-repeat: no-repeat;
+  }
+
+  80% {
+    background-image: url(assets/toupeira5.svg);
+    background-repeat: no-repeat;
+  }
+  100% {
+    background-image: url(assets/toupeira6.svg);
+    background-repeat: no-repeat;
+  }
+}
